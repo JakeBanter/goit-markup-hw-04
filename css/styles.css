@@ -156,8 +156,17 @@ section {
 /* ================= BODY ============ */
 
 .hero-section {
-  background-color: #2e2f42;
+  background-color: rgba(46,47,66,0.7);
   text-align: center;
+
+  
+  background-image: 
+  linear-gradient(to right, rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
+  url('../images/people-office.jpg');
+  
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: auto auto;
 }
 
 .section.hero-section {
@@ -199,18 +208,15 @@ section {
   padding: 16px 32px;
 }
 
-.hero-button:hover,
+.hero-button:hover {
+  background-color: #4D5AE5;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .hero-button:focus {
-  background-color: #404bbf;
+  background-color: #404BBF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.hero-button:visited {
-  background-color: #4d5ae5;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
+   }
 /* =================== Section 2 ==================================*/
 
 .header-section-hidden {
@@ -232,6 +238,21 @@ h2 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.svg-advantages-container {
+  display: flex;
+  justify-content: center;
+  padding: 24px 100px;
+
+  background: #F4F4FD;
+  border-radius: 4px;
+
+}
+
+.svg-advantages {
+height: 64px;
+width: 64px;
 }
 
 .header-section {
