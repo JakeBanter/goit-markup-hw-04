@@ -86,6 +86,7 @@ body {
 
 .logo-studio {
   color: var(--logo-studio-color);
+  padding: 24px;
 }
 
 .logo-studio-footer {
