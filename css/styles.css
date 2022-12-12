@@ -195,8 +195,8 @@ section {
 .hero-text {
   font-weight: 600;
   font-size: 56px;
-  /* line-height: 1.07; */
-  letter-spacing: 0.02em;
+  line-height: 1.07;
+  /* letter-spacing: 0.02em; */
   color: #ffffff;
 
   display: block;
