@@ -91,6 +91,7 @@ body {
 
 .logo-studio-footer {
   color: #f4f4fd;
+  display: block;
 }
 
 .nav {
@@ -132,12 +133,14 @@ body {
   color: #4d5ae5;
 }
 
-.contacts {
+.link.contacts {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contacts-text-color);
   padding: 24px 0;
+  display: flex;
+  align-items: center;
 }
 
 .contacts:hover,
@@ -153,17 +156,32 @@ section {
   padding-bottom: 120px;
 }
 
+.list-contacts > li {
+  display: flex;
+  align-content: center;
+}
+
+.icon-mail-phone {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  margin-right: 5px;
+  fill: currentColor;
+}
+
+.mail-phone {
+  display: inline-flex;
+}
+
 /* ================= BODY ============ */
 
 .hero-section {
-  background-color: rgba(46,47,66,0.7);
+  background-color: rgba(46, 47, 66, 0.7);
   text-align: center;
 
-  
-  background-image: 
-  linear-gradient(to right, rgba(46,47,66,0.7), rgba(46,47,66,0.7)),
-  url('../images/people-office.jpg');
-  
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/people-office.jpg');
+
   background-repeat: no-repeat;
   background-position: top;
   background-size: auto auto;
@@ -209,21 +227,22 @@ section {
 }
 
 .hero-button:hover {
-  background-color: #4D5AE5;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  background-color: #4d5ae5;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .hero-button:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   }
+}
 /* =================== Section 2 ==================================*/
 
 .header-section-hidden {
   display: none;
 }
 
-.list.cards li:not(:last-child) {
+.list.cards > li:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -245,14 +264,14 @@ h2 {
   justify-content: center;
   padding: 24px 100px;
 
-  background: #F4F4FD;
+  background: #f4f4fd;
   border-radius: 4px;
-
 }
 
 .svg-advantages {
-height: 64px;
-width: 64px;
+  display: block;
+  height: 64px;
+  width: 64px;
 }
 
 .header-section {
@@ -288,7 +307,7 @@ width: 64px;
 /* ===============================Team============================ */
 
 .team-subscription-item {
-  padding: 32px 15px;
+  padding: 32px 16px;
   text-align: center;
 }
 
@@ -310,39 +329,34 @@ width: 64px;
   border-radius: 0px 0px 4px 4px;
 }
 
-.button-portfolio {
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  border: 1px solid #e7e9fc;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #4d5ae5;
-  padding: 12px 24px;
+.list-social-advantages {
+  margin-top: 12px;
+  gap: 24px;
+  justify-content: center;
 }
 
-.button-portfolio-margin:not(:last-child) {
-  margin-right: 24px;
+.item-social-advantages {
+  display: flex;
+  background-color: var(--logo-web-color);
+  border-radius: 50%;
+  /* width: 40px;
+  height: 40px; */
+  justify-content: center;
+  align-items: center;
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-  background: #4d5ae5;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border: 1px solid #4d5ae5;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
+.svg-social-media {
+  width: 16px;
+  height: 16px;
 }
 
-/* ================================Page products===================== */
+.item-social-advantages > a {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+/* ================================Page products(Portfolio)===================== */
 
 .section.section-products {
   padding-top: 96px;
@@ -380,6 +394,80 @@ width: 64px;
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.button-portfolio {
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #e7e9fc;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  padding: 12px 24px;
+}
+
+.button-portfolio-margin:not(:last-child) {
+  margin-right: 24px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background: #4d5ae5;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 1px solid #4d5ae5;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+/* ===============================Customers=============== */
+.header-section-customers {
+  line-height: 1.167;
+}
+
+.list-customers {
+  justify-content: center;
+  gap: 24px;
+}
+
+.item-customer {
+  /* flex-basis: 168px; */
+
+  justify-content: center;
+  display: flex;
+}
+
+.svg-customer {
+  height: 56px;
+  width: 104px;
+  fill: currentColor;
+}
+
+.item-customer > a:hover,
+.item-customer > a:focus {
+  border: 1px solid #4d5ae5;
+  border-radius: 4px;
+  color: #4d5ae5;
+}
+
+.item-customer > a {
+  padding: 15px 31px;
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  justify-content: center;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
 /* ===========FOOTER============== */
 
 .footer {
@@ -394,13 +482,68 @@ width: 64px;
   letter-spacing: 0.02em;
   color: #e7e9fc;
   margin-top: 18px;
-}
 
-.container-footer {
   display: block;
-}
-
-.footer-subscription-container {
   width: 264px;
   height: auto;
 }
+
+.container-footer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-social-media-container {
+  margin-left: 120px;
+}
+
+.footer-social-media-headding {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-transform: initial;
+}
+
+.list-social-footer {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.item-social-footer {
+  /* height: 40px;
+  width: 40px; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-basis: 40px; */
+}
+
+.item-social-footer > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 40px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.svg-social-media-footer {
+  height: 24px;
+  width: 24px;
+}
+
+.item-social-footer > a:hover,
+.item-social-footer > a:focus {
+  background-color: #31d0aa;
+}
+
+/* ======================================================== */
