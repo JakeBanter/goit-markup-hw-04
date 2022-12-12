@@ -257,6 +257,10 @@ h2 {
   color: #2e2f42;
 }
 
+.item-heading-advantages {
+  margin-top: 8px;
+}
+
 .svg-advantages-container {
   display: flex;
   justify-content: center;
@@ -327,13 +331,13 @@ h2 {
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-social-advantages {
+.list-social-team {
   margin-top: 12px;
   gap: 24px;
   justify-content: center;
 }
 
-.item-social-advantages {
+.item-social-team {
   display: flex;
   background-color: var(--logo-web-color);
   border-radius: 50%;
@@ -348,11 +352,15 @@ h2 {
   height: 16px;
 }
 
-.item-social-advantages > a {
+.item-social-team > a {
   display: flex;
   justify-content: center;
   padding: 12px;
+  border-radius: 50%;
+
+  
 }
+
 
 /* ================================Page products(Portfolio)===================== */
 
