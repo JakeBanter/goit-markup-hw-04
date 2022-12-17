@@ -86,7 +86,7 @@ body {
 
 .logo-studio {
   color: var(--logo-studio-color);
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .logo-studio-footer {
@@ -107,7 +107,7 @@ body {
   margin-left: 40px;
 }
 
-.list.list-nav {
+nav {
   margin-left: 77px;
 }
 
@@ -185,6 +185,9 @@ section {
   background-repeat: no-repeat;
   background-position: top;
   background-size: auto auto;
+
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .section.hero-section {
@@ -244,6 +247,10 @@ section {
   margin-right: 24px;
 }
 
+.list.cards > li {
+  width: 264px;
+}
+
 .list.cards {
   display: flex;
 }
@@ -265,7 +272,8 @@ h2 {
 .svg-advantages-container {
   display: flex;
   justify-content: center;
-  padding: 24px 100px;
+  align-items: center;
+  height: 112px;
 
   background: #f4f4fd;
   border-radius: 4px;
@@ -340,12 +348,13 @@ h2 {
 
 .item-social-team {
   display: flex;
-  background-color: var(--logo-web-color);
-  border-radius: 50%;
-  /* width: 40px;
-  height: 40px; */
   justify-content: center;
   align-items: center;
+  background-color: var(--logo-web-color);
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
 }
 
 .svg-social-media {
@@ -353,15 +362,21 @@ h2 {
   height: 16px;
 }
 
-.item-social-team > a {
+.link-social-team {
   display: flex;
   justify-content: center;
-  padding: 12px;
-  border-radius: 50%;
-
+  align-items: center;
   
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
 }
 
+.link-social-team:hover,
+.link-social-team:focus {
+  background-color: #31d0aa;
+
+}
 
 /* ================================Page products(Portfolio)===================== */
 
@@ -444,10 +459,14 @@ h2 {
 }
 
 .item-customer {
-  /* flex-basis: 168px; */
+  flex-basis: 168px;
+  height: 88px;
 
   justify-content: center;
+  align-items: center;
   display: flex;
+
+  overflow: hidden;
 }
 
 .svg-customer {
@@ -464,11 +483,11 @@ h2 {
 }
 
 .item-customer > a {
-  padding: 15px 31px;
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   border: 1px solid #8e8f99;
   border-radius: 4px;
